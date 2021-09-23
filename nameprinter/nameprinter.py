@@ -1,3 +1,8 @@
+# Cameron Nelson
+# SoftDev
+# CLSWRK - Student Name Printer
+# 2021-09-22
+
 import random 
 
 pd1 = [];
