@@ -21,4 +21,5 @@ def main():
     printRandomName(pd1)
     printRandomName(pd2)
 
-main();
+if (__name__ == "__main__"):
+    main();
