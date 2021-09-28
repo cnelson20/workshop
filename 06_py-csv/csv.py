@@ -1,3 +1,5 @@
+import random
+
 file = open("occupations.csv");
 lines = file.read().split("\n");
 splitlines = [];
@@ -9,5 +11,7 @@ for i in lines:
 del splitlines[0];
 splitlines.pop();
 jobs = dict(splitlines);
+
+randomNum = random.random()*100;
 
 print(jobs);
