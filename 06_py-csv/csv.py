@@ -25,7 +25,7 @@ dictionary = dict(split)
 numbers = []
 
 for i in dictionary:
-    numbers.append(float(dictionary.get(i)))
+    numbers.append(dictionary.get(i));
 
 print(random.choices(list(dictionary), weights=numbers))
 #print(list(dictionary));
