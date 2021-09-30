@@ -1,0 +1,12 @@
+Cameron Nelson
+SoftDev
+K08 - Comparing Python Code
+2021-09-30
+
+I think most of our scripts were fairly similar. 
+I looked at like 8 people's scripts and every person used random.choices() to generate
+the weighted result.
+Some people did use the csv library to parse the file into a dict, 
+but from the workshops I looked at more people just read the file using open()
+and read() and then parsing the file in some way. The parsing of the file was the most unique
+part of each team's code (reasonably so, you can do it a bunch of ways).
