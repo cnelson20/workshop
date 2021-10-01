@@ -1,0 +1,17 @@
+Supreme Greens - Cameron Nelson, Eric Guo, Qina Liu
+SoftDev
+K08 -- Python Virtual Env. Observations
+2021-09-30
+
+From what I read from https://docs.python.org/3/library/venv.html,
+i believe running python3 -m venv ~/whatever creates a virtual environment 
+in the supplied directory that can have different packages / python modules 
+than the main computer.
+
+From https://realpython.com/python-virtual-environments-a-primer/ I learned more about 
+the file structure Python creates.
+(these are subdirectories)
+bin - holds program files for the virtual env.
+include - c headers for any packages you might install
+lib - holds a copy of python and other dependencies for whatever you are 
+using the virtual environment for.
