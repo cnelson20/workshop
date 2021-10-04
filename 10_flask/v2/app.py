@@ -1,5 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Tigers -- Cameron Nelson, Sophie Liu, Qina Liu
 # SoftDev
+# K10 - flask observations (cont.)
 # Oct 2021
 
 from flask import Flask

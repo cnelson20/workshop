@@ -1,6 +1,7 @@
-# Clyde 'Thluffy' Sinclair
+# Tigers -- Cameron Nelson, Sophie Liu, Qina Liu
 # SoftDev
-# Oct 2021
+# K10 flask observations (continued)
+# 2021-10-04
 
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
@@ -14,10 +15,9 @@ def hello_world():
 app.debug = True
 app.run()
 
-#The same extra string is still there, but, and the rest looks similar
-#Right before it runs "app.debug = True" is stated
-#It usually says that the debuger is off, so maybe app.debug = True turns it on?
+#This is the same as v2 except for the "app.debug = True" statement
+#normally false debug = off, so presumably this enables is
 
-#RESULTS
 
-#Everything went the same as v2 but the debugger is now on!
+#results are what we expected
+
