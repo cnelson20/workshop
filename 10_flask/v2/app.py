@@ -13,10 +13,7 @@ def hello_world():
 
 app.run()
 
-#Two print statments instead of one, interesting
-#The second print statement is familiar from v0 but the first one adds an extra string before it, maybe it will print right before on the same line.
-#The rest looks about the same, so they only thing that should change is the terminal.
-
+# This one has another print statement, should print to terminal server is running on with hello_world's name
 #RESULTS
 
-#It did not print on the same line, but on the line before. Otherwise, it went as expected and printed the extra string before everything else was kept the same.
+#it printed it in the terminal, but the name was actually __main__ not hello world or the func name. 
