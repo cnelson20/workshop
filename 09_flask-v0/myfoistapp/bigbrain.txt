@@ -1,0 +1,14 @@
+Bob-Quacky Alliance -- Cameron Nelson, Sophie Liu, Bob, Quacky
+SoftDev
+K09 -- Flask Observations
+
+Q0: This line constructs a Flask object (though IDK what properties it has), which is like java.
+
+Q1: app.route("/") should refer to the base of the linux directory
+
+Q2: This should print the name of the function, "hello_world"
+
+Q3: I don't think this gets printed, though i'm very unsure about it. 
+As it turns out it returns this text if you connect to it in a web browser on the given ipv4 and port
+
+Q4: We saw this in java very often where you call a function of an object. 
