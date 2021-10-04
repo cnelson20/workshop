@@ -1,5 +1,6 @@
-# Clyde 'Thluffy' Sinclair
+# Tigers -- Cameron Nelson, Sophie Liu, Qina Liu
 # SoftDev
+# K10 - flask observations (cont.)
 # Oct 2021
 
 from flask import Flask
@@ -15,11 +16,9 @@ if __name__ == "__main__":  # true if this file NOT imported
     app.debug = True        # enable auto-reload upon code change
     app.run()
 
-#Has a string before returning __name__, but this time it says something different (same idea though)
-#The rest of hello_world() is the same
-#Has an if statement now that check whether the __name__ is __main__, which should be true
-#The if statement now determines whether the last to lines are called, meaning that if it is true the debuger is turned on and app.py is ran, otherwise not
+#this is mostly the same, but the app.run() is within an if statement that checks
+#whether the module name = main (file you actually run, not being imported)
 
 #RESULTS
 
-#
+#does what we expected (printed slightly different print statement)
