@@ -4,29 +4,29 @@
 # 2021-09-28
 
 import random
+from flask import Flask
+app = Flask(__name__);
 
-file = open("occupations.csv");
-lines = file.read().split("\n");
-del lines[0]; #Remove "Job Class, Percentage" line
-split = [];
-for i in lines:
-    if "," in i:
-        #remove quotes, split string into job and %, then convert % to float
-        i = i.replace("\"","");
-        comma = i.rsplit(",",1);
-        comma[1] = float(comma[1]);
-        #add to necessary arrays
-        split.append(comma);
+@app.route("/")
+def hello_world():
+    file = open("occupations.csv");
+    lines = file.read().split("\n");
+    del lines[0]; #Remove "Job Class, Percentage" line
+    split = [];
+    for i in lines:
+        if "," in i:
+            #remove quotes, split string into job and %, then convert % to float
+            i = i.replace("\"","");
+            comma = i.rsplit(",",1);
+            comma[1] = float(comma[1]);
+            #add to necessary arrays
+            split.append(comma);
 
-del split[len(split)-1]; # Remove "Total" as a job
-dictionary = dict(split)
+    del split[len(split)-1]; # Remove "Total" as a job
+    dictionary = dict(split)
 
-# Another array is needed because the numbers are currently being stored as strings. 
-numbers = []
+    job = (random.choices(list(dictionary), weights=dictionary.values()));
+    return job[0] + "<br>";
+    
 
-for i in dictionary:
-    numbers.append(dictionary.get(i));
-
-print(random.choices(list(dictionary), weights=numbers))
-#print(list(dictionary));
-#print(numbers);
+app.run();
