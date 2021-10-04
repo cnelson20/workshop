@@ -24,9 +24,18 @@ def hello_world():
 
     del split[len(split)-1]; # Remove "Total" as a job
     dictionary = dict(split)
-
-    job = (random.choices(list(dictionary), weights=dictionary.values()));
-    return job[0] + "<br>";
     
+    html = "<h2> Tigers -- Cameron Nelson, Sophie Liu, Qina Liu </h2><hr>";
+    
+    html += "Random Weighted Job: " + (random.choices(list(dictionary), weights=dictionary.values()))[0] + "<br><br><br>";
+    
+    html += "<table> <tr> <th> Job </th> <th> Percentage </th> </tr>";
+    for i in list(dictionary):
+        html += "<tr>";
+        html += ("<td>" + i + "&nbsp;&nbsp;&nbsp;</td>");
+        html += ("<td>" + str(dictionary[i]) + "% </td>");
+        html += "</tr>";
+        
+    return html;
 
 app.run();
