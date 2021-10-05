@@ -36,7 +36,7 @@ def hello_world():
         html += ("<td>" + str(dictionary[i]) + "% </td>");
         html += "</tr>";
 
+    html += "<tr> <td> Total </td> <td> 99.8% </td> </tr> </table>";
     return html;
-    html += "<tr> <td> Total </td> <td> 99.8% </td> </tr>";
 
 app.run();
