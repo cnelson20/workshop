@@ -1,0 +1,8 @@
+Tigers -- Cameron Nelson, Sophie Liu, Qina Liu
+SoftDev
+K11 - Flask Static Folder
+2021-10-06
+
+When we accessed localhost:5000/static/foo it prompted us to download foo because firefox thought foo was some sort of executable.
+
+localhost:5000/static/foo.html results in the loading of an html file which says "Is this plaintext, though?" which is sort of wrong because the html interpreter in firefox removes the <html> & <body> tags so that we don't see it (as it should).
