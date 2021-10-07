@@ -1,0 +1,19 @@
+Tigers -- Cameron Nelson, Sophie Liu, Qina Liu
+SoftDev
+K12 - Flask templating using jinja2
+2021-10-07
+
+Q0: Removing render_template from the import statement causes an error when you try to access /my_foist_template/ as it isn't defined
+Q1: localhost:5000/my_foist_template/
+Q2: the first argument is the file name (within the templates folder, the rest are variables for jinja2 to work with. foo becomes the name of the page in the browser, collection is the list of values that flask serves when my_foist_template/ is accessed.
+
+Notables:
+File structure
+- there's the usual app.py in the root dir and in the templates folder model_tmplt.html .
+
+When opening the template html file locally, it clearly isn't working (jinja isn't parsing it at all).
+As app.py passes in values to render_template, it should parse it in some way
+
+
+Results:
+Everything went as expected! Hooray :) 
