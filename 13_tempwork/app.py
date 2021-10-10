@@ -7,7 +7,7 @@ import random
 from flask import Flask, render_template;
 app = Flask(__name__);
 
-@app.route("/occupy_flask_street")
+@app.route("/occupy_flask_st")
 def code():
     file = open("data/occupations.csv");
     lines = file.read().split("\n");
@@ -17,13 +17,16 @@ def code():
         if "," in i:
             #remove quotes, split string into job and %, then convert % to float
             i = i.replace("\"","");
-            comma = i.rsplit(",",1);
+            comma = i.rsplit(",",2);
+            print(str(comma)+ "\n");
             comma[1] = float(comma[1]);
             #add to necessary arrays
             split.append(comma);
 
     del split[len(split)-1]; # Remove "Total" as a job
-    dictionary = dict(split)
+    dictionary = {};
+    for i in split:
+        dictionary[i[0]] = i[1];
 
     weighted_choice = (random.choices(list(dictionary), weights=dictionary.values()))[0];
 

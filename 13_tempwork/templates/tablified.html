@@ -20,13 +20,13 @@
       <tr> <th> Job Class </th> <th> Percentage </th> </tr>
       {% for item in dictionary %}
       <tr> 
-	<td> <a href="https://careers.mcdonalds.com/main/">{{ item[0] }}</a> </td> <td> {{ item[1]  }}% </td>
+	<td> <a href="https://www.indeed.com/jobs?q={{item[0] | replace(" ","%20")}}">{{ item[0] }}</a> </td> <td> {{ item[1]  }}% </td>
       </tr>
       
       {% endfor %}
     </table>
     
-    <footer style="position:fixed;left:0;bottom:0;width:100%;text-align:left;padding:2%;">
+    <footer style="position:fixed;left:0;bottom:0;width:100%;text-align:left;padding:2%;background-color:#e0e0e0">
       Team Name 404 - Cameron Nelson, Austin Ngan, Raymond Yeung
     </footer>
   </body>
