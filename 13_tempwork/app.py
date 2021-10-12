@@ -7,7 +7,7 @@ import random
 from flask import Flask, render_template;
 app = Flask(__name__);
 
-@app.route("/occupy_flask_st")
+@app.route("/occupyflaskst")
 def code():
     file = open("data/occupations.csv");
     lines = file.read().split("\n");

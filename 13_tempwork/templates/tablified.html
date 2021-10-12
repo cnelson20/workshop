@@ -5,7 +5,7 @@
     <title> Job Opportunities </title>
   </head>
 
-  <body>
+  <body style="font-family:Calibri,sans-serif;">
     
     <h3>
       Need a job? Well, we're here for you! <br>
@@ -20,7 +20,7 @@
       <tr> <th> Job Class </th> <th> Percentage </th> </tr>
       {% for item in dictionary %}
       <tr> 
-	<td> <a href="https://www.indeed.com/jobs?q={{item[0] | replace(" ","%20")}}">{{ item[0] }}</a> </td> <td> {{ item[1]  }}% </td>
+	<td> <a href="{{ item[2] }}"> {{ item[0] }}</a> </td> <td> {{ item[1]  }}% </td>
       </tr>
       
       {% endfor %}
