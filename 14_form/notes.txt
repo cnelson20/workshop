@@ -1,0 +1,7 @@
+Red Wings -- Cameron Nelson, Sophie Liu, Daniel Sooknanan
+SoftDev
+K14 - Form and Function
+2021-10-14
+
+Notable Observations:
+Flask will give a 405 Bad Request error to the browser if you to use POST unless the @app.route function includes methods=['POST'] along with any others you'd want.
