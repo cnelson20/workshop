@@ -51,9 +51,10 @@ def authenticate():
     #print(request.args['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return render_template("response.html",username=request.args['username']);
-
-
+    if request.method == 'GET':
+        return render_template("response.html",username=request.args['username'],method=request.method);
+    if request.method == 'POST':
+        return render_template("response.html",username=request.form['username'],method=request.method);
     
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
