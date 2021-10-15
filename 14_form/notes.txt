@@ -5,3 +5,5 @@ K14 - Form and Function
 
 Notable Observations:
 Flask will give a 405 Bad Request error to the browser if you to use POST unless the @app.route function includes methods=['POST'] along with any others you'd want.
+
+Get data is accessed via request.args, Post data by request.form
