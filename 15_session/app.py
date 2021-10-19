@@ -3,22 +3,24 @@
 # K15 Flask Session Shenaniganza
 # 2021-10-18
 
+import os
 from flask import Flask, render_template, request, session, redirect
 
 app = Flask(__name__)    #create Flask object
 
-real_username = "username"
-real_password = "password"
+real_dict = {"username":"password"}
 
-app.secret_key = 'BAD_SECRET_KEY' #
+app.secret_key = os.urandom(32);
 
 @app.route("/", methods=['GET', 'POST'])
 def welcome():
-    if (request.method == 'POST'):
+    if 'username' in session:
+        return render_template('response.html')
+    elif (request.method == 'POST'):
         username = request.form.get('username')
         password = request.form.get('password')
-        if real_username == username:
-            if real_password == password:
+        if username in real_dict.keys():
+            if real_dict[username] == password:
                 session['username'] = request.form.get('username')
                 return render_template( 'response.html')
             else: 
