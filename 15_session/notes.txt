@@ -1,0 +1,3 @@
+Variables in Jinja do not display if the variable is empty. 
+CSS can be used to manipulate buttons. 
+
