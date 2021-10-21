@@ -30,4 +30,22 @@ c.executemany("""INSERT INTO COURSES (NAME,MARK,ID)
 VALUES (?,?,?); """,array);
 
 db.commit() #save changes
+
+c.execute("""CREATE TABLE STUDENTS (
+NAME  TEXT NOT NULL,
+AGE INT NOT NULL,
+ID INTEGER PRIMARY KEY NOT NULL); 
+""");
+
+students = open('students.csv')
+reader = csv.reader(students)
+array = [];
+for i in reader:
+    array.append(i);
+    
+array.pop(0); # Remove first line "code,mark,id" 
+c.executemany("""INSERT INTO STUDENTS (NAME,AGE,ID)
+VALUES (?,?,?); """,array);
+
+db.commit() 
 db.close()  #close database
