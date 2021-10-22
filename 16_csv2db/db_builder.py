@@ -1,4 +1,4 @@
-# Cameron Nelson
+# Red Wings -- Cameron Nelson, Sophie Liu, Daniel Sooknanan
 # SoftDev
 # K16 - All About Database
 # 2021-10-20
