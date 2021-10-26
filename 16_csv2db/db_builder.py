@@ -1,4 +1,4 @@
-# Cameron Nelson
+# Red Wings -- Cameron Nelson, Sophie Liu, Daniel Sooknanan
 # SoftDev
 # K16 - All About Database
 # 2021-10-20
@@ -20,14 +20,30 @@ command = """CREATE TABLE COURSES (
 c.execute(command)    # run SQL statement
 
 courses = open('courses.csv')
-reader = csv.reader(courses)
+reader = csv.DictReader(courses)
 array = [];
 for i in reader:
-    array.append(i);
+    array.append([i["code"],i["mark"],i["id"]]);
     
-array.pop(0); # Remove first line "code,mark,id" 
 c.executemany("""INSERT INTO COURSES (NAME,MARK,ID)
 VALUES (?,?,?); """,array);
 
 db.commit() #save changes
+
+c.execute("""CREATE TABLE STUDENTS (
+NAME  TEXT NOT NULL,
+AGE INT NOT NULL,
+ID INTEGER PRIMARY KEY NOT NULL); 
+""");
+
+students = open('students.csv')
+reader = csv.DictReader(students)
+array = [];
+for i in reader:
+    array.append([i["name"],i["age"],i["id"]]);
+
+c.executemany("""INSERT INTO STUDENTS (NAME,AGE,ID)
+VALUES (?,?,?); """,array);
+
+db.commit() 
 db.close()  #close database
