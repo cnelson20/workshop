@@ -1,0 +1,9 @@
+.link {text-decoration:none;font-weight:bold;color:white;}
+.li_custom {list-style-type:none;margin:0;padding:0;}
+.footer {display:flex;flex-direction:row-reverse;padding:1%;text-align:right;color:#777777;background-color:#444444;}
+.navbar {display:flex;flex-direction:column;padding-left:1%;padding-right:5%;}
+.maindiv {display:flex;flex-direction:column;background-color:#777777;}
+body {background-color:#707070;font-family:Arial;}
+h1 {padding:none;background-color:#cccccc;color:white;text-align:center;}
+.sideways {display:flex;flex-direction:row;}
+.vertical {display:flex;flex-direction:column;}

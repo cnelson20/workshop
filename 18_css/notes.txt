@@ -1,0 +1,2 @@
+inline css gets pretty messy fast 
+internal / external basically the same (one in the html, other imports the css file)
