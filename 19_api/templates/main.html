@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<h1> Nasa APOD </h1>
+	{% if error %}
+	{{ error }}
+	{% else %}
+	<img src="{{ pictureurl }}">
+	{% endif %}
+</html>
