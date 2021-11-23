@@ -1,4 +1,8 @@
-#from flask import Flask
+# Cameron Nelson
+# Softdev Pd 2
+# K19 - api 
+# 2021-11-23
+
 import urllib3, json
 from flask import Flask, render_template
 
