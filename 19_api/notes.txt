@@ -1,0 +1,7 @@
+Cameron Nelson
+Softdev Pd 2
+K19 - api 
+2021-11-23
+
+NASA's api is very simple and makes it easy to get image urls
+url of image can be accessed by dictionary.get('url') once json decoded 
