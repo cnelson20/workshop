@@ -1,0 +1,17 @@
+<!-- 
+ Cameron Nelson
+  Softdev Pd 2
+  K19 - api 
+  2021-11-23 
+-->
+
+
+<!DOCTYPE html>
+<html>
+	<h1> Nasa APOD </h1>
+	{% if error %}
+	{{ error }}
+	{% else %}
+	<img src="{{ pictureurl }}">
+	{% endif %}
+</html>
