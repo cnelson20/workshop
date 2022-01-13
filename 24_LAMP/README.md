@@ -3,30 +3,25 @@
 
 ### Prerequisites:
 
-- Something you should know beforehand...
-- Something you will need installed beforehand...
+- Digital Ocean account with payment
 
-1. Step blah blah blah, and/or...
-1. Step, with `inline code`, and/or...
-1. Step, with
-    ```
-    generic code block or terminal command
-    ```
-   and/or...
-    ```javascript
-    var foo = "this that JS tho";
-    ```
-   and/or...
-    ```python
-    print("this that Python tho")
-    ```
-   and/or...
-1. Step, with [hyperlink](https://xkcd.com)s...
+#### Setting up Droplet
 
+
+
+#### Installing Apache & Flask
+
+Run the following commands
+```
+sudo apt install apache2
+sudo apt install python3-venv
+sudo apt install python3-pip
+```
 
 ### Resources
 
 https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+https://db.tannercrook.com/lamp-stack-on-ubuntu-server/
 ---
 
 Accurate as of (last update): 2021-01-12
