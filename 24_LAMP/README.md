@@ -59,7 +59,31 @@ if __name__ == "__main__":
     app.run()
 ```
 
+#### Installing Flask
+Run:
+```
+apt install python3-pip
+pip install virtualenv
+cd /var/www/FlaskApp/app/
+virtualenv venv/
+source venv/bin/activate
+```
+The virtual env should appear, then continue on and run:
+```
+pip install flask
+python __init__.py
+```
+If the normal flask stuff shows up, Ctrl-C and deactivate the virtual env
 
+#### Configure a Virtual Host
+Run:
+```
+cd /etc/apache2/sites-available/
+wget grixisutils.site/lamp_tools/FlaskApp.conf
+mv FlaskApp.conf.1 FlaskApp.conf
+```
+`cat FlaskApp.conf` to make sure the conf file is there, if it is run
+`sudo a2ensite FlaskApp`.
 
 ### Resources
 
