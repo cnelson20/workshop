@@ -10,13 +10,39 @@
 
 
 #### Installing Apache & Flask
+Switch to root user before starting this
 
 Run the following commands
 ```
 sudo apt install apache2
-sudo apt install python3-venv
-sudo apt install python3-pip
+sudo apt install libapache2-mod-wsgi python-dev
+sudo a2enmod wsgi 
 ```
+
+#### Creating a Flask App
+Run
+```
+cd /var/www
+mkdir FlaskApp
+cd FlaskApp/
+mkdir app/
+cd app/
+mkdir static/ templates/
+
+```
+Verify you directory struct looks like this:
+```
+/var/www/
+├── FlaskApp
+│   └── app
+│       ├── static
+│       └── templates
+└── html
+    └── index.html
+```
+
+
+
 
 ### Resources
 
