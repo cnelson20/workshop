@@ -32,7 +32,7 @@ mkdir static/ templates/
 ```
 Verify you directory struct looks like this:
 ```
-/var/www/
+/var/www/ :
 ├── FlaskApp
 │   └── app
 │       ├── static
@@ -41,6 +41,23 @@ Verify you directory struct looks like this:
     └── index.html
 ```
 
+Run
+```
+cd /var/www/FlaskApp/app/
+nano __init__.py
+```
+Nano should open and you should type some basic python flask code 
+A suggestion:
+```Python
+from flask import Flask
+app = Flask(__name__)
+@app.route("/")
+def main():
+    return "Hello, World"
+    
+if __name__ == "__main__":
+    app.run()
+```
 
 
 
