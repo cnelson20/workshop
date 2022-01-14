@@ -80,10 +80,20 @@ Run:
 ```
 cd /etc/apache2/sites-available/
 wget grixisutils.site/lamp_tools/FlaskApp.conf
-mv FlaskApp.conf.1 FlaskApp.conf
 ```
-`cat FlaskApp.conf` to make sure the conf file is there, if it is run
+See where wget stores the file to, and mv it to `FlaskApp.conf`
+
+`cat FlaskApp.conf` to make sure the conf file is good, if it is run
 `sudo a2ensite FlaskApp`.
+
+Run:
+```
+cd /var/www/FlaskApp/
+wget grixisutils.site/lamp_tools/flaskapp.wsgi
+```
+Make sure you rename the file it saves to `flaskapp.wsgi`
+
+service apache2 restart
 
 ### Resources
 
