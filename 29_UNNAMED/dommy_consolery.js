@@ -18,10 +18,10 @@
    (delete this block comment once you are done)
 */
 
-// Team People :: Cameron Nelson, Austin Ngan
+// Team Persons :: Justin Morrill, Cameron Nelson, Austin Ngan
 // SoftDev pd2
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2022-02-08
+// K29
+// 2022-02-9
 // --------------------------------------------------
 
 
