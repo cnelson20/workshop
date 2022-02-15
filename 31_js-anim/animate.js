@@ -47,6 +47,8 @@ var drawCircle = () => {
 			growing = true;
 		}
 	}
+	
+	requestID = window.requestAnimationFrame(drawCircle);
 }
 
 //var drawDot = function() {
