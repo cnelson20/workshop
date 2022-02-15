@@ -184,15 +184,15 @@ dotButton.addEventListener( "click", drawDot );
 stopButton.addEventListener( "click",  stopIt );
 
 window.addEventListener('keydown', (e) => {
-  console.log(e);
-  console.log(e.key);
-  if (e.keyCode == 87 /* W */) {
-	  paddle1_y = Math.max(0, paddle1_y - paddleMovementSpeed);
-  } else if (e.keyCode == 83 /* S */) {
-	  paddle1_y = Math.min(paddle1_y + paddleMovementSpeed, c.clientHeight - paddleHeight);
-  } else if (e.keyCode == 73 /* I */) {
-	  paddle2_y = Math.max(0, paddle2_y - paddleMovementSpeed);
-  } else if (e.keyCode == 75 /* K */) {
-	  paddle2_y = Math.min(paddle2_y + paddleMovementSpeed, c.clientHeight - paddleHeight);
-  }
+	//console.log(e);
+	//console.log(e.key);
+	if (e.keyCode == 87 /* W */) {
+		paddle1_y = Math.max(0, paddle1_y - paddleMovementSpeed);
+	} else if (e.keyCode == 83 /* S */) {
+		paddle1_y = Math.min(paddle1_y + paddleMovementSpeed, c.clientHeight - paddleHeight);
+	} else if (e.keyCode == 73 /* I */) {
+		paddle2_y = Math.max(0, paddle2_y - paddleMovementSpeed);
+	} else if (e.keyCode == 75 /* K */) {
+		paddle2_y = Math.min(paddle2_y + paddleMovementSpeed, c.clientHeight - paddleHeight);
+	}
 });
