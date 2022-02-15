@@ -52,7 +52,7 @@ var draw = (e) => {
 
 var wipeCanvas = () => {
 	ctx.beginPath();
-	ctx.fillStyle = 'white';
+	/* ctx.fillStyle = 'white'; */
 	ctx.clearRect(0, 0, c.clientWidth,c.clientHeight);
 }
 
